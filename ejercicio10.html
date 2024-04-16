@@ -7,16 +7,29 @@
 </head>
 <body>
     <script>
-        let cuadrado = "";
+let rombo = "";
 
 for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < 5; j++) {
-    cuadrado += "* ";
+  for (let j = 0; j < 5 - i; j++) {
+    rombo += " ";
   }
-  cuadrado += "\n";
+  for (let k = 0; k <= i; k++) {
+    rombo += "* ";
+  }
+  rombo += "\n";
 }
 
-console.log(cuadrado);
+for (let i = 4; i >= 0; i--) {
+  for (let j = 0; j < 5 - i; j++) {
+    rombo += " ";
+  }
+  for (let k = 0; k <= i; k++) {
+    rombo += "* ";
+  }
+  rombo += "\n";
+}
+
+console.log(rombo);
 
     </script>
 </body>
