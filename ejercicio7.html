@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1, nota2, nota3;
+let media;
+
+do {
+  nota1 = parseFloat(prompt("Ingrese la primera nota:"));
+} while (isNaN(nota1));
+
+do {
+  nota2 = parseFloat(prompt("Ingrese la segunda nota:"));
+} while (isNaN(nota2));
+
+do {
+  nota3 = parseFloat(prompt("Ingrese la tercera nota:"));
+} while (isNaN(nota3));
+
+media = (nota1 + nota2 + nota3) / 3;
+
+if (media >= 3) {
+  alert("Aprobado. La nota media es: " + media);
+} else {
+  alert("Reprobado. La nota media es: " + media);
+}
+
+    </script>
+</body>
+</html>
